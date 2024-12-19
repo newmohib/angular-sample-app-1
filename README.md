@@ -34,3 +34,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - generate component for check
 - ng g c header --dry-run
 - ng g c header
+- ng g directive directives/highlight-completed-todo
