@@ -1,0 +1,11 @@
+/* .todos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */
+
+.todos .todos_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
