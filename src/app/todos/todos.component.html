@@ -5,6 +5,16 @@
 }
 
 <!-- <p *ngIf="!todoItems().length" >Loading...</p> -->
+<form>
+  <label for="search">Filter Todos</label>
+  <input
+    [(ngModel)]="serchTerm"
+    type="text"
+    id="search"
+    placeholder="Search todos..."
+    name="serchTerm"
+  />
+</form>
 
 <ul class="todos">
   @for (todo of todoItems(); track todo.id) {

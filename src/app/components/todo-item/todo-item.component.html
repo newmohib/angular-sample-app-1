@@ -9,5 +9,5 @@
     [checked]="todo().completed"
     (change)="todoToggled.emit(todo())"
   />
-  <label for="todo-{{ todo().id }}">{{ todo().title }}</label>
+  <label for="todo-{{ todo().id }}">{{ todo().title | uppercase }}</label>
 </li>
