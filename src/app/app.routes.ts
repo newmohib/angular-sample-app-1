@@ -1,14 +1,22 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-    {
-     path: '',
-     pathMatch: 'full',
-     loadComponent: () => import('./home/home.component').then(m => m.HomeComponent)
-
-},
-{
-  path: 'todos',
-  loadComponent: () => import('./todos/todos.component').then(m => m.TodosComponent)
-}
+  {
+    path: '',
+    pathMatch: 'full',
+    loadComponent: () =>
+      import('./home/home.component').then((m) => m.HomeComponent),
+  },
+  {
+    path: 'todos',
+    loadComponent: () =>
+      import('./todos/todos.component').then((m) => m.TodosComponent),
+  },
+  {
+    path: 'print',
+    loadComponent: () =>
+      import('./pdffileprint/pdffileprint.component').then(
+        (m) => m.PdffileprintComponent
+      ),
+  },
 ];
